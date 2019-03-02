@@ -1,165 +1,189 @@
-/*h1{
-    padding-left: 430px;
-    padding-top: 200px;
-    display: block;
-    width: 100%;
-    height: 265px;
-    background: url(../image/mountains.jpg) 0 17% no-repeat;
-    background-size: cover;
-    color: white;
-    opacity: 0.9;
-}
-*/
+
 
 body{
     background: url("../image/mountains.jpg");
     background-repeat: no-repeat;
     background-size: 100% 500px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
+
 
 h1{
     text-align: center;
     padding-top: 85px;
     font-size: 135px;
-    color: white;
     opacity: 0.8;
-}
-header{
-    position: relative;
-}
-
-article header::before {
-    content: "";
-    background-image: url("../image/hands.jpg");
-    width: 50%;
-    display: block;
-}
-
-nav{
-    top: 184%;
-    display: block;
-    margin-top: 11px;
-    border-radius: 16px;
-    width: 359px;
-    background: gray;
     position: absolute;
+    width: 100%;
+    color: white;
+}
+nav{
+    align-items: stretch;
+    margin-top: 570px;
+    margin-left: 50px;
 }
 
+
+nav::before {
+    content: " ";
+    top: 67%;
+    left: 2%;
+    width: 370px;
+    height: 2480px;
+    display: block;
+    background: url("../image/1.jpg");
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+    opacity: 0.6;
+}
+
+nav h2 {
+    font-size: 40px;
+}
+
+nav ul li {
+    margin-top: 10px;
+    font-size: 17px;
+    list-style: none;
+}
+nav ul li a {
+    color: black;
+}
+nav ul li:hover {
+    font-size: 19px;
+}
+nav ul li:hover a {
+    background: azure;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 30%;
+}
 article {
-    position: relative;
+    width: 70%;
+    margin-top: 550px;
 }
 
 article header {
-    position: absolute;
-    top: -57px;
-    left: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 article header::before {
     border-radius: 20px;
-    top: 37%;
-    position: absolute;
-    right: 112%;
     content: "";
     display: block;
     background: url(../image/hands.jpg) no-repeat;
     background-size: 100% 100%;
-    width: 545px;
+    width: 490px;
     height: 570px;
-    float: left;
-}
-
-article header p {
-    font-size: 20px;
-    padding-right: 180px;
 }
 
 article header h2 {
-    margin-top: 395px;
-    font-size: 55px;
-    padding-right: 50px;
+    margin-left: 45px;
+    margin-top: 95px;
+    font-size: 61px;
+    width: 35%;
 }
 
-article section:nth-child(2){
+article header p {
     position: absolute;
-    top: 505px;
-    left: 400px;
+    width: 25%;
+    left: 60%;
+    margin-top: 270px;
+    font-size: 20px;
 }
 
 article section:nth-child(2)::after {
     border-radius: 20px;
-    top: 37%;
-    left: 52%;
-    position: absolute;
     content: "";
     display: block;
     background: url(../image/dog.jpg) no-repeat;
     background-size: 100% 100%;
-    width: 545px;
+    width: 490px;
     height: 570px;
-    float: left;
-}
-
-article section:nth-child(3){
+    left: 60%;
+    top: 148%;
     position: absolute;
-    top: 1543px;
-    left: 1155px;
 }
 
-footer p {
-    position: absolute;
-    top: 2060px;
+article section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5%;
 }
 
-article section:nth-child(2) h2{
-    margin-top: 410px;
-    font-size: 55px;
+article section:nth-child(2) p {
     width: 30%;
-    padding-left: 200px;
-}
-
-article section:nth-child(2) p{
+    margin-top: -12px;
     font-size: 20px;
-    width: 30%;
-    padding-left: 200px;
+}
+
+article section:nth-child(2) h2 {
+    font-size: 60px;
+    width: 35%;
 }
 
 article section:nth-child(3)::before {
     border-radius: 20px;
-    position: absolute;
-    right: 112%;
     content: "";
     display: block;
     background: url(../image/image.jpg) no-repeat;
     background-size: 100% 100%;
-    width: 545px;
+    width: 490px;
     height: 570px;
-    float: left;
 }
 
-article section:nth-child(3) h2{
-    margin-top: 15px;
-    font-size: 55px;
+article section:nth-child(3) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5%;
+}
+article section:nth-child(3) h2 {
+    margin-left: 45px;
+    margin-top: 50px;
+    font-size: 61px;
+    width: 35%;
 }
 
-article section:nth-child(3) ol, p{
-    font-size: 20px;
-    width: 56%;
-}
-
-footer p{
+article section:nth-child(3) p {
     position: absolute;
-    top: 2820px;
-    /* left: 100px; */
-    text-align: center;
-    background: black;
-    color: white;
-    width: 99%;
-    height: 40px;
-    padding-top: 22px;
+    width: 25%;
+    left: 60%;
+    margin-top: 410px;
+    font-size: 20px;
 }
 
-a{
-    text-decoration: none;
+article section:nth-child(3) ol {
+    position: absolute;
+    width: 25%;
+    left: 60%;
+    margin-top: 140px;
+    font-size: 20px;
 }
+
+footer {
+    background: black;
+    width: 100%;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
 
